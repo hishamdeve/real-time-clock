@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Digits clock</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+</head>
+<body onload="initClock()">
+    <div class="datetime" id="digit">
+        <div class="date">
+            <span id="dayname">day</span>,
+            <span id="month">month</span>,
+            <span id="daynum">00</span>,
+            <span id="year">year</span>,
+        </div>
+        <div class="time">
+            <span id="hour">00</span>:
+            <span id="minutes">00</span>:
+            <span id="seconds">00</span>:
+            <span id="period">AM</span>
+        </div>
+    </div>
+    <div class="analogclock" id="analog">
+        <div class="hour" id="hour">
+            <div class="hr" id="hr"></div>
+        </div>
+        <div class="min">
+            <div class="mn" id="mn"></div>
+        </div>
+        <div class="sec">
+            <div class="sc" id="sc"></div>
+        </div>
+    </div>
+    <div class="btn"  >
+        <button id="btn"onclick="digitOnly()" ondblclick="analogOnly()">Analog Type</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
