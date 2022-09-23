@@ -53,12 +53,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(/real-time-clock/images/clock.png);
+    background: url(/images/clock.png);
     background-size: cover;border: 4px solid #2e94e3;
     border-radius: 50%;
     box-shadow: 0 -15px 15px rgba(255,255,255,0.01),
-                inset 0 -15px 15px rgba(255,255,255,0.01),
-                0px 15px 15px rgba(255,255,255,0.1),
+                inset 0 -10px 15px rgba(255,255,255,0.01),
+                0px 10px 15px rgba(255,255,255,0.1),
                 inset 0 15px 15px rgba(255,255,255,0.1);
     
 }
@@ -122,13 +122,14 @@ body{
     
 }
 #btn{
+    
     position: absolute;
     top: 450px;
     right: 570px;
     width: 220px;
     background-color: #2e94e3;
     padding: 15px 20px;
-    margin-top: 20px;
+    margin-top: 30px;
     border: none;
     font-size: 30px;
     border-radius: 10px;
